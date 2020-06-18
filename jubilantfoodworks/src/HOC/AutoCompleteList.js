@@ -3,7 +3,7 @@ import '../assets/css/autoCompleteList.css';
 
 const AutoCompleteList = (props) => {
     return(
-        <ul className="autoCompleteListing">
+        <ul className={"autoCompleteListing" + (props.overflow ? ' overflow' : '')}>
             {props.children}
         </ul>
     )

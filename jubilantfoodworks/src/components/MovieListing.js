@@ -50,7 +50,7 @@ const MovieListing = (props) => {
     const closeDropdown = (e) => {
         e.preventDefault()
         setShowDropdown(false);
-      }
+    }
     
     return(
         <div className="main-wrapper" onClick={(e) => closeDropdown(e)}>
@@ -64,10 +64,10 @@ const MovieListing = (props) => {
                 </AutoCompleteInput>
                     
                 {showDropdown ?
-                    <AutoCompleteList>
+                    <AutoCompleteList overflow={filteredItems.length > 5 ? true : false}>
                         {filteredItems.map((arr, index) => 
                             arr.imdbID || arr.Title ?
-                                <li key={arr.imdbID} onClick={() => handleSelect(arr.imdbID, arr.Title)}>{arr.Title}<span className="year">{arr.Year}</span></li>
+                                <li class="listItem" key={arr.imdbID} onClick={() => handleSelect(arr.imdbID, arr.Title)}>{arr.Title}<span className="year">{arr.Year}</span></li>
                             :
                                 <li key={index}>{arr}</li>
                         )}

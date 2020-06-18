@@ -9,6 +9,10 @@
     margin: 1px auto 0;
     padding: 0;
     text-align: left;
+    
+}
+
+.overflow {
     height: 400px;
     overflow-y: scroll;
 }
@@ -18,15 +22,16 @@
     line-height: 30px;
     font-size: 20px;
     padding: 10px 15px;
-    cursor: pointer;
 }
 
-.autoCompleteListing li .year{
+.autoCompleteListing li.listItem .year{
     display: block;
     font-size: 16px;
     color: gray;
 }
 
-.autoCompleteListing li:hover {
+.autoCompleteListing li.listItem:hover {
     background-color: #5f9ea047;
+    cursor: pointer;
+
 }
