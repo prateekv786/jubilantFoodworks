@@ -1,0 +1,67 @@
+.inputBox {
+    padding: 0 10px;
+    border: none;
+    font-size: 16px;
+    background: transparent;
+    line-height: 30px;
+    flex: 1;
+}
+
+.inputBox:hover, .inputBox:active, .inputBox:focus{
+    outline: none;
+}
+
+.selectedListing  {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: black;
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.selectedListing li {
+    padding: 0 22px 0 8px;
+    display: inline-block;
+    border-radius: 25px;
+    margin: 5px;
+    line-height: 35px;
+    position: relative;
+    background-color: #a9a9a97a;
+}
+
+.close {
+    position: absolute;
+    right: 2px;
+    top: 13px;
+    width: 10px;
+    height: 10px;
+    opacity: 0.3;
+    cursor: pointer;
+}
+
+.close:hover {
+    opacity: 1;
+}
+
+.close:before, .close:after {
+    position: absolute;
+    content: ' ';
+    height: 10px;
+    width: 2px;
+    background-color: #333;
+}
+
+.close:before {
+    transform: rotate(45deg);
+}
+
+.close:after {
+    transform: rotate(-45deg);
+}
+
+.error {
+    color: #c30c0cb3;
+    font-size: 16px;
+}    
